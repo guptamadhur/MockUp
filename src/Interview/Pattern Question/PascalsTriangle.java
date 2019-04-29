@@ -1,3 +1,15 @@
+/*
+Pascal's triangle is an matrix of the binomial coefficients.
+        The number of entries in every row increases by 1 starting from the first row having 1 entry
+        and the second row having 2 entries and so on
+
+          1
+         1 1
+        1 2 1
+        1 3 3 1
+        1 4 6 4 1
+*/
+
 public class PascalsTriangle {
     static int factorial(int n)
     {
