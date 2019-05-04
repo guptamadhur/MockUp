@@ -1,4 +1,8 @@
 /*
+# Author: Madhur Gupta
+# Github: github.com/guptamadhur
+# Project: Java MockUp
+
 Pascal's triangle is an matrix of the binomial coefficients.
         The number of entries in every row increases by 1 starting from the first row having 1 entry
         and the second row having 2 entries and so on

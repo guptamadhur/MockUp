@@ -1,4 +1,10 @@
-// Program to find best buying and selling days
+/*
+        # Author: Madhur Gupta
+        # Github: github.com/guptamadhur
+        # Project: Java MockUp
+
+        Program to find best buying and selling days
+*/
 
 import java.util.ArrayList;
 

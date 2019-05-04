@@ -1,4 +1,10 @@
-// Java program to find angle between hour and minute hands
+/*
+        # Author: Madhur Gupta
+        # Github: github.com/guptamadhur
+        # Project: Java MockUp
+
+        Java program to find angle between hour and minute hands
+*/
 
 import java.util.Scanner;
 

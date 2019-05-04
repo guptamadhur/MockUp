@@ -1,4 +1,8 @@
 /*
+# Author: Madhur Gupta
+# Github: github.com/guptamadhur
+# Project: Java MockUp
+
 {4,7,8,2,1}             4  7  8  2  1
                          3  1 -6 -1
                           -2 -7  5

@@ -1,5 +1,8 @@
 import java.util.Scanner;
 /*
+# Author: Madhur Gupta
+# Github: github.com/guptamadhur
+# Project: Java MockUp
 
          1
         121
