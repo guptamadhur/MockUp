@@ -1,3 +1,5 @@
+package Interview.JustDial;
+
 import java.util.Scanner;
 /*
 # Author: Madhur Gupta
@@ -15,7 +17,7 @@ import java.util.Scanner;
            1
           */
 
-public class Diamond
+public class DiamondNumberPattern
 {
     public static void main(String args[])
     {

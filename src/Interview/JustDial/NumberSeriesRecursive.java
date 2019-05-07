@@ -1,4 +1,4 @@
-package Interview.JustDail;
+package Interview.JustDial;
 
 /*
 # Author: Madhur Gupta
