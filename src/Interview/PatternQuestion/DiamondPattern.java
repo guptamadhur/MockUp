@@ -1,4 +1,6 @@
+package Interview.PatternQuestion;
 import java.util.Scanner;
+
 /*
 # Author: Madhur Gupta
 # Github: github.com/guptamadhur
@@ -13,7 +15,7 @@ import java.util.Scanner;
          1
 */
 
-public class Pattern {
+public class DiamondPattern {
     public static void main(String[] args) {
         Scanner scanner= new Scanner(System.in);
         System.out.println("Enter the number of rows");
