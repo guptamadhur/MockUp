@@ -1,4 +1,4 @@
-package Interview.JustDial;
+package com.guptamadhur.Interview.JustDial;
 /*
         # Author: Madhur Gupta
         # Github: github.com/guptamadhur

@@ -1,4 +1,4 @@
-package Interview;
+package com.guptamadhur.Interview;
 
 /*
         # Author: Madhur Gupta

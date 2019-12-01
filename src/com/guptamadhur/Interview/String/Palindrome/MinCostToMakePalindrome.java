@@ -1,4 +1,4 @@
-package Interview.String.Palindrome;
+package com.guptamadhur.Interview.String.Palindrome;
 
 /*
 # Author: Madhur Gupta

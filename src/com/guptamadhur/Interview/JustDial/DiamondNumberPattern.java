@@ -1,4 +1,4 @@
-package Interview.JustDial;
+package com.guptamadhur.Interview.JustDial;
 
 import java.util.Scanner;
 /*

@@ -1,4 +1,4 @@
-package Interview.String;
+package com.guptamadhur.Interview.String;
 /*
 # Author: Madhur Gupta
 # Github: github.com/guptamadhur
