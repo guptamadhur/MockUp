@@ -1,4 +1,4 @@
-package web.app.madhurgupta.JavaPractice.Others;
+package web.app.madhurgupta.Learning.Comparator;
 
 import java.util.*;
 /*

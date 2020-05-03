@@ -1,9 +1,10 @@
-package web.app.madhurgupta.Practice.Others.Thread;
+package web.app.madhurgupta.Learning.Topic.Thread;
 
 /*
 # Author: Madhur Gupta
 # Github: github.com/guptamadhur
 # Project: Java MockUp
+# Normal Thread class is not safe as it may give same ID to multiple threads
  */
 
 public class CustomerThreadDemo {

@@ -1,4 +1,4 @@
-package web.app.madhurgupta.Practice.Debug;
+package web.app.madhurgupta.Learning.Topic.Debug;
 
 /*
 # Author: Madhur Gupta

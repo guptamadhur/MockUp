@@ -1,11 +1,17 @@
-package web.app.madhurgupta.JavaPractice.Others;
+package web.app.madhurgupta.Practice.Misc;
 
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-// Java program to find LCM of two numbers.
-class Test {
+/*
+# Author: Madhur Gupta
+# Github: github.com/guptamadhur
+# Project: Java MockUp
+# Java program to find LCM of two numbers adn check are they Prime Factors
+ */
+
+class LCMandPrimeFactor {
     static int gcd(int a, int b) {
         if (a == 0)
             return b;
@@ -34,9 +40,7 @@ class Test {
             while (n % 2 == 0) {
                 set.add(2);
                 n /= 2;
-
             }
-
             for (int i = 3; i <= Math.sqrt(n); i += 2) {
                 while (n % i == 0) {
                     set.add(i);
@@ -44,12 +48,10 @@ class Test {
                     n /= i;
                 }
             }
-
             if (n > 2) {
                 set.add(n);
             }
             return set.size();
-
         }
     }
 }

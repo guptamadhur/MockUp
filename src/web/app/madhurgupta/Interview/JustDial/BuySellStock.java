@@ -1,4 +1,4 @@
-package com.guptamadhur.Interview.JustDial;
+package web.app.madhurgupta.Interview.JustDial;
 /*
         # Author: Madhur Gupta
         # Github: github.com/guptamadhur
@@ -9,7 +9,6 @@ package com.guptamadhur.Interview.JustDial;
 
 import java.util.ArrayList;
 
-// Solution structure
 class IntervalStock
 {
     int buy;

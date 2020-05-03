@@ -1,4 +1,4 @@
-package web.app.madhurgupta.JavaPractice.Others;
+package web.app.madhurgupta.Learning.Interface;
 /*
 # Author: Madhur Gupta
 # Github: github.com/guptamadhur

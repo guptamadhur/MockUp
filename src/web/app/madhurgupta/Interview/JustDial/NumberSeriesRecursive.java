@@ -1,4 +1,4 @@
-package com.guptamadhur.Interview.JustDial;
+package web.app.madhurgupta.Interview.JustDial;
 
 /*
 # Author: Madhur Gupta

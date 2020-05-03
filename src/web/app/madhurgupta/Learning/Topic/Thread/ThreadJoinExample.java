@@ -1,4 +1,4 @@
-package web.app.madhurgupta.JavaPractice.Others;
+package web.app.madhurgupta.Learning.Topic.Thread;
 
 /*
 # Author: Madhur Gupta
@@ -8,14 +8,15 @@ package web.app.madhurgupta.JavaPractice.Others;
 
 public class ThreadJoinExample {
 
-    volatile int status=1;
+    volatile int status = 1;
+
     public static void main(String[] args) {
 
         ThreadJoinExample p = new ThreadJoinExample();
 
-        A1 a=new A1(p);
-        B1 b=new B1(p);
-        C1 c=new C1(p);
+        A1 a = new A1(p);
+        B1 b = new B1(p);
+        C1 c = new C1(p);
 
         a.start();
         b.start();
@@ -23,22 +24,21 @@ public class ThreadJoinExample {
     }
 }
 
-class A1 extends Thread{
+class A1 extends Thread {
     ThreadJoinExample p1;
 
-    A1(ThreadJoinExample p){
+    A1(ThreadJoinExample p) {
         this.p1 = p;
     }
 
     @Override
     public void run() {
-
-        try{
+        try {
             synchronized (p1) {
 
                 for (int i = 0; i < 10; i++) {
 
-                    while(p1.status!=1){
+                    while (p1.status != 1) {
                         p1.wait();
                     }
 
@@ -48,31 +48,31 @@ class A1 extends Thread{
                 }
 
             }
-        }catch (Exception e) {
-            System.out.println("Exception 1 :"+e.getMessage());
+        } catch (Exception e) {
+            System.out.println("Exception 1 :" + e.getMessage());
         }
 
     }
 
 }
 
-class B1 extends Thread{
+class B1 extends Thread {
 
     ThreadJoinExample p2;
 
-    B1(ThreadJoinExample p2){
+    B1(ThreadJoinExample p2) {
         this.p2 = p2;
     }
 
     @Override
     public void run() {
 
-        try{
+        try {
             synchronized (p2) {
 
                 for (int i = 0; i < 10; i++) {
 
-                    while(p2.status!=2){
+                    while (p2.status != 2) {
                         p2.wait();
                     }
 
@@ -82,30 +82,30 @@ class B1 extends Thread{
                 }
 
             }
-        }catch (Exception e) {
-            System.out.println("Exception 2 :"+e.getMessage());
+        } catch (Exception e) {
+            System.out.println("Exception 2 :" + e.getMessage());
         }
 
     }
 }
 
-class C1 extends Thread{
+class C1 extends Thread {
 
     ThreadJoinExample p3;
 
-    C1(ThreadJoinExample p){
+    C1(ThreadJoinExample p) {
         this.p3 = p;
     }
 
     @Override
     public void run() {
 
-        try{
+        try {
             synchronized (p3) {
 
                 for (int i = 0; i < 10; i++) {
 
-                    while(p3.status!=3){
+                    while (p3.status != 3) {
                         p3.wait();
                     }
 
@@ -115,8 +115,8 @@ class C1 extends Thread{
                 }
 
             }
-        }catch (Exception e) {
-            System.out.println("Exception 3 :"+e.getMessage());
+        } catch (Exception e) {
+            System.out.println("Exception 3 :" + e.getMessage());
         }
 
     }

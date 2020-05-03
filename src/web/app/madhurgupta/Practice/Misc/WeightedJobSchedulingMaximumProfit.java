@@ -1,4 +1,4 @@
-package web.app.madhurgupta.JavaPractice.Others;
+package web.app.madhurgupta.Practice.Misc;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -7,6 +7,9 @@ import java.util.Comparator;
 # Author: Madhur Gupta
 # Github: github.com/guptamadhur
 # Project: Java MockUp
+# Sort the jobs by finish time.For every job find the first job which does not overlap with this job
+# and see if this job profit plus profit till last non overlapping job is greater
+# than profit till last job.
  */
 
 class Job {
@@ -48,11 +51,6 @@ public class WeightedJobSchedulingMaximumProfit {
     }
 
     /**
-     * Sort the jobs by finish time.
-     * For every job find the first job which does not overlap with this job
-     * and see if this job profit plus profit till last non overlapping job is greater
-     * than profit till last job.
-     *
      * @param jobs
      * @return
      */

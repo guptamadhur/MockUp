@@ -1,4 +1,4 @@
-package com.guptamadhur.Interview.JustDial;
+package web.app.madhurgupta.Interview.JustDial;
 
 import java.util.Scanner;
 /*
@@ -35,7 +35,7 @@ public class DiamondNumberPattern
             space--;
             for (i = 1; i <= 2 * j - 1; i++)
             {
-                System.out.print(i);
+                System.out.print(" "+i);
             }
             System.out.println("");
         }
@@ -49,7 +49,7 @@ public class DiamondNumberPattern
             space++;
             for (i = 1; i <= 2 * (n - j) - 1; i++)
             {
-                System.out.print(i);
+                System.out.print(" "+i);
             }
             System.out.println("");
         }

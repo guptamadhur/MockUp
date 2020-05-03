@@ -1,4 +1,4 @@
-package web.app.madhurgupta.JavaPractice.Others.Booking.com;
+package web.app.madhurgupta.Interview.Booking.com;
 
 import java.io.*;
 import java.util.ArrayList;

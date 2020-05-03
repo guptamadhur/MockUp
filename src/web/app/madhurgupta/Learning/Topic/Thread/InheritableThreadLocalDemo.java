@@ -1,4 +1,10 @@
-package web.app.madhurgupta.Practice.Others.Thread;
+package web.app.madhurgupta.Learning.Topic.Thread;
+
+/*
+# Author: Madhur Gupta
+# Github: github.com/guptamadhur
+# Project: Java MockUp
+ */
 
 public class InheritableThreadLocalDemo {
     public static void main(String[] args) {
