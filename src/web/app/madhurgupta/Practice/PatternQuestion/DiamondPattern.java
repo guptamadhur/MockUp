@@ -1,4 +1,4 @@
-package com.guptamadhur.Interview.PatternQuestion;
+package web.app.madhurgupta.Practice.PatternQuestion;
 import java.util.Scanner;
 
 /*

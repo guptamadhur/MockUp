@@ -1,4 +1,4 @@
-package com.guptamadhur.Interview;
+package web.app.madhurgupta.Interview;
 
 /*
         # Author: Madhur Gupta
@@ -42,10 +42,13 @@ public class HourAndMinHand
     {
         Scanner scanner= new Scanner(System.in);
         System.out.println("Enter the Hours and Minutes");
+        System.out.print("Hours: ");
         int hour = scanner.nextInt();
+        System.out.print("Minutes: ");
         int min = scanner.nextInt();
 
         System.out.println(calcAngle(hour, min)+" degree");
+        System.out.println("Angle for Hours and Minutes: 3 : 40");
         System.out.println(calcAngle(3, 40)+" degree");
     }
 }

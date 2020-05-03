@@ -1,4 +1,4 @@
-package com.guptamadhur.Interview.String;
+package web.app.madhurgupta.Practice.String.Palindrome;
 /*
 # Author: Madhur Gupta
 # Github: github.com/guptamadhur
@@ -10,7 +10,8 @@ Output: True
 
 public class RearrangePalindrome {
     public static void main(String[] args) {
-        System.out.println(checkString("geeksogeeks"));
+        System.out.println("geeksogeeks: "+checkString("geeksogeeks"));
+        System.out.println("wwwa: "+checkString("wwwa"));
     }
     static boolean checkString(String str){
         int[] count=new int[26];
@@ -20,7 +21,7 @@ public class RearrangePalindrome {
             count[(int) str.charAt(i)-97]++;
         }
         for(int i=0;i<count.length;i++){
-            if(count[i] == 1){
+            if(count[i]%2 == 1){
                 odd++;
             }
             if(odd > 1)

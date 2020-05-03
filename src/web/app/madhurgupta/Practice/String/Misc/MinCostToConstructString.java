@@ -1,4 +1,4 @@
-package com.guptamadhur.Interview.String;
+package web.app.madhurgupta.Practice.String;
 
 /*
 # Author: Madhur Gupta
