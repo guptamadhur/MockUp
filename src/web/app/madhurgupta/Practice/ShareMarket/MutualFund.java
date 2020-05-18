@@ -12,16 +12,17 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class MutualFund {
     private static final String file_Path = "src\\web\\app\\madhurgupta\\Practice\\ShareMarket\\MutualFundReport.csv";
     private static SingleNode head, tail;
-    private static double totalUnits, holdingUnits;
+    private static Double totalUnits = 0.0, holdingUnits = 0.0;
 
     public static void main(String[] args) {
         MutualFund ob = new MutualFund();
-        ob.readCSV();
+        ob.readCSV(file_Path);
         SingleNode node;
         node = head;
         while (node != null) {
@@ -31,8 +32,9 @@ public class MutualFund {
         System.out.print("Total Units: " + totalUnits + "  Holding Units: " + holdingUnits + "  Selling Units: " + (totalUnits - holdingUnits));
     }
 
-    private void readCSV() {
-        try (BufferedReader br = Files.newBufferedReader(Paths.get(MutualFund.file_Path), StandardCharsets.US_ASCII)) {
+    private void readCSV(String file_Path) {
+        Path pathtoFile = Paths.get(file_Path);
+        try (BufferedReader br = Files.newBufferedReader(pathtoFile, StandardCharsets.US_ASCII)) {
             String line = br.readLine();
             line = br.readLine(); //Header of File
             while (line != null) {
@@ -47,7 +49,7 @@ public class MutualFund {
     }
 
     private void dataAnalytics(String[] dataRow) {
-        double value = Double.parseDouble(dataRow[5]);
+        Double value = Double.parseDouble(dataRow[5]);
         if (value > 0) {//Buy
             SingleNode newNode = new SingleNode();
             newNode.setValue(value);
@@ -66,9 +68,10 @@ public class MutualFund {
     }
 
     private void sellUnits(Double value) {
-        double val = head.getValue() - value;
+        Double val = head.getValue() - value;
         if (val == 0) {
             head = head.getNext();
+            return;
         } else if (val > 0) {
             head.setValue(val);
         } else if (val < 0) {
