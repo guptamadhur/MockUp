@@ -45,13 +45,14 @@ public class Profit_Maximization {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter wr = new PrintWriter(System.out);
-        int n = Integer.parseInt(br.readLine().trim());
-        String[] arr_p = br.readLine().split(" ");
-        int[] p = new int[n];
-        for (int i_p = 0; i_p < arr_p.length; i_p++) {
-            p[i_p] = Integer.parseInt(arr_p[i_p]);
-        }
-        wr.println(solve(p));
+//        int n = Integer.parseInt(br.readLine().trim());
+//        String[] arr_p = br.readLine().split(" ");
+//        int[] p = new int[n];
+//        for (int i_p = 0; i_p < arr_p.length; i_p++) {
+//            p[i_p] = Integer.parseInt(arr_p[i_p]);
+//        }
+//        wr.println(solve(p));
+        wr.println(solve(new int[]{1, 2, 3, 4, 9, 8}));
         wr.close();
         br.close();
     }
