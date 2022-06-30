@@ -9,6 +9,7 @@ import java.text.ParseException;
  */
 
 public class ReverseString {
+    
     static String rev(String str) {
         if (null == str || str.length() <= 1) {
             return str;
